@@ -1,0 +1,69 @@
+/* resets */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+
+.visible-title {
+    visibility: visible;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a9abae;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    width: 300px;
+    height: auto;
+    border-style: solid;
+}
+
+td{
+    width: 300px;
+    height: auto;
+    border-style: solid;
+}

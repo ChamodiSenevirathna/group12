@@ -1,0 +1,25 @@
+version: '3.9' # docker version
+
+services:
+  php_app:
+    image: latest
+    ports:
+      - 8080:80
+    build: .
+    volumes:
+      - ./:/var/www/html # sync project directory with the container directory
+
+  mysql_db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1
